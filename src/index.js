@@ -3,14 +3,16 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Library from './chapter03/Library';
+import StudentList from './chapter03/StudentList';
+// import Library from './chapter03/Library';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render( 
-<React.StrictMode> 
-  {/* <App /> */ } 
-  <Library />
+<React.StrictMode > 
+  {  /* <App /> */ } 
+  {  /* <Library /> */ } 
+  <StudentList />
   </React.StrictMode>
 );
 
