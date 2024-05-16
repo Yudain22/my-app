@@ -26,7 +26,7 @@ const styles = {
         display: "flex",
         flexDirection: "row",
         border: "1px solid grey",
-        borderFadius: 16,
+        borderRadius: 16,
     },
     imageContainer: {},
     image: {
