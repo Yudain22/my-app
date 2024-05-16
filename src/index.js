@@ -9,6 +9,7 @@ import reportWebVitals from './reportWebVitals';
 // import Clock from './chapter04/Clock';
 // import PropsEx from './chapter05/PropsEx';
 import CommnetList from './chapter05/CommentList';
+import BoardList from './chapter05/BoardList';
 
 
 
@@ -21,7 +22,8 @@ root.render(
       {/* <StudentList />  */}
   {/* <ConfirmDialog/> */}
   {/* <PropsEx/> */}
-  <CommnetList/>
+  {/* <CommnetList/> */}
+  <BoardList/>
   </React.StrictMode>
 );
 
