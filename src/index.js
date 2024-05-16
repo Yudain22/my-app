@@ -7,7 +7,8 @@ import reportWebVitals from './reportWebVitals';
 // import Library from './chapter03/Library';
 // import ConfirmDialog from './chapter04/ConfirmDialog';
 // import Clock from './chapter04/Clock';
-import PropsEx from './chapter05/PropsEx';
+// import PropsEx from './chapter05/PropsEx';
+import CommnetList from './chapter05/CommentList';
 
 
 
@@ -19,7 +20,8 @@ root.render(
       {/* <Library />  */}
       {/* <StudentList />  */}
   {/* <ConfirmDialog/> */}
-  <PropsEx/>
+  {/* <PropsEx/> */}
+  <CommnetList/>
   </React.StrictMode>
 );
 
