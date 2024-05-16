@@ -8,8 +8,9 @@ import reportWebVitals from './reportWebVitals';
 // import ConfirmDialog from './chapter04/ConfirmDialog';
 // import Clock from './chapter04/Clock';
 // import PropsEx from './chapter05/PropsEx';
-import CommnetList from './chapter05/CommentList';
-import BoardList from './chapter05/BoardList';
+// import CommnetList from './chapter05/CommentList';
+// import BoardList from './chapter05/BoardList';
+import NotificationList from './chapter06/NotificationList';
 
 
 
@@ -23,7 +24,8 @@ root.render(
   {/* <ConfirmDialog/> */}
   {/* <PropsEx/> */}
   {/* <CommnetList/> */}
-  <BoardList/>
+  {/* <BoardList/> */}
+  <NotificationList/>
   </React.StrictMode>
 );
 
