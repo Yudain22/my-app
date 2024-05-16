@@ -5,7 +5,8 @@ function Board(props){
         <div style={styles.wrapper}>
             <div style={styles.imageContainer}>
                 <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png"
+                    // src={"https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png"}
+                    src={props.image}
                     style={styles.image} 
                 />
             </div>
@@ -42,13 +43,12 @@ const styles = {
     },
     titleText: {
         color: "black",
-        fontSize: 16,
+        fontSize: 20,
         fontWeight: "bold",
     },
     nameText: {
         color: "black",
-        fontSize: 12,
-        fontWeight: "bold",
+        fontSize: 14,
     },
     commentText: {
         color: "black",
