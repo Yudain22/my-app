@@ -1,20 +1,21 @@
-import React, {act, useEffect, useReducer, useState} from "react";
+import React, { act, useEffect, useReducer, useState } from "react";
 
-function reducer(state, action){
-    return{
+function reducer(state, action) {
+    return {
         ...state,
-        [action.name]:action.value
+        [action.name]: action.value
     };
 }
 
-function Info(){
+function Info() {
     const [state, dispatch] = useReducer(reducer, {
-        name:'',
-        nickname:''
+        name: '',
+        nickname: '',
+        addr: ''
     });
 
-    const{name,nickname}=state;
-    const onChange= e => {
+    const { name, nickname, addr } = state;
+    const onChange = e => {
         dispatch(e.target);
     };
 
@@ -40,21 +41,26 @@ function Info(){
     //     setNickname(e.target.value)
     // };
 
-    return(
+    return (
         <div>
             <div>
-                <input name="name" value={name} onChange={onChange}/>
+                <input name="name" value={name} onChange={onChange} />
                 {/* onChange가 바뀌면 onChageName 값 호출 */}
-                <input name="nickname" value={nickname} onChange={onChange}/>
+                <input name="nickname" value={nickname} onChange={onChange} />
+                {/* onChange가 바뀌면 onChangeNickname 값 호출 */}
+                <input name="addr" value={addr} onChange={onChange} />
                 {/* onChange가 바뀌면 onChangeNickname 값 호출 */}
             </div>
             <div>
-            <div><b>이름  : </b>{name}</div>
+                <div><b>이름  : </b>{name}</div>
+            </div>
+            <div>
+                <div><b>닉네임  : </b>{nickname}</div>
+            </div>
+            <div>
+                <div><b>주소  : </b>{addr}</div>
+            </div>
         </div>
-        <div>
-            <div><b>닉네임  : </b>{nickname}</div>
-        </div>
-        </div>       
     )
 }
 export default Info;
