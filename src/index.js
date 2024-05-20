@@ -28,8 +28,8 @@ root.render(
   {/* <CommnetList/> */}
   {/* <BoardList/> */}
   {/* <NotificationList/> */}
-  <Counter/>
-    {/* <Info/> */}
+  {/* <Counter/> */}
+    <Info/>
   </React.StrictMode>
 );
 
