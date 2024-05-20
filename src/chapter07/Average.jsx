@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useCallback, useMemo, useState } from "react";
 
 const getAverage = Numbers => {
     console.log("평균값 계산 중");
@@ -11,17 +11,32 @@ function Average(props) {
     const [list, setList] = useState([]);
     const [number, setNumber] = useState('');
 
-    const onChange = e => {
-        setNumber(e.target.value);
-    };
 
-    const onInsert = e => {
+    //useMemo
+    // const onChange = e => {
+    //     setNumber(e.target.value);
+    // };
+
+    // const onInsert = e => {
+    //     const nextList = list.concat(parseInt(number));
+    //     setList(nextList);
+    //     setNumber('')
+    // }
+
+    // useCallback
+    // useMemo() Hook과 유사하지만 값이 아닌 함수를 반환
+    const onChange = useCallback(e =>{
+        setNumber(e.target.value);
+    },[]); //컴포넌트가 처음 렌더링될 때만 함수 생성
+
+    const onInsert = useCallback(e =>{
         const nextList = list.concat(parseInt(number));
         setList(nextList);
         setNumber('')
-    }
+    },[number,list]); //number 혹은 list가 변경될 때만 함수 생성
 
     const avg = useMemo(() => getAverage(list), [list])
+
     return (
         <div>
             <input value={number} onChange={onChange} />
