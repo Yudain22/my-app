@@ -13,6 +13,7 @@ import reportWebVitals from './reportWebVitals';
 import NotificationList from './chapter06/NotificationList';
 import Counter from './chapter07/Count';
 import Info from './chapter07/Info';
+import Average from './chapter07/Average';
 
 
 
@@ -29,7 +30,8 @@ root.render(
   {/* <BoardList/> */}
   {/* <NotificationList/> */}
   {/* <Counter/> */}
-    <Info/>
+  <Average/>
+    {/* <Info/> */}
   </React.StrictMode>
 );
 
