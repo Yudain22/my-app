@@ -20,7 +20,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode> 
-      {/* <App /> */} 
+      {/* <App />  */}
       {/* <Library />  */}
       {/* <StudentList />  */}
   {/* <ConfirmDialog/> */}
@@ -28,8 +28,8 @@ root.render(
   {/* <CommnetList/> */}
   {/* <BoardList/> */}
   {/* <NotificationList/> */}
-  {/* <Counter/> */}
-    <Info/>
+  <Counter/>
+    {/* <Info/> */}
   </React.StrictMode>
 );
 
