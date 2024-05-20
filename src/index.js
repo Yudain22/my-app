@@ -11,6 +11,8 @@ import reportWebVitals from './reportWebVitals';
 // import CommnetList from './chapter05/CommentList';
 // import BoardList from './chapter05/BoardList';
 import NotificationList from './chapter06/NotificationList';
+import Counter from './chapter07/Count';
+import Info from './chapter07/Info';
 
 
 
@@ -25,7 +27,9 @@ root.render(
   {/* <PropsEx/> */}
   {/* <CommnetList/> */}
   {/* <BoardList/> */}
-  <NotificationList/>
+  {/* <NotificationList/> */}
+  {/* <Counter/> */}
+    <Info/>
   </React.StrictMode>
 );
 
