@@ -1,8 +1,18 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 
 function Info(){
     const [name, setName]=useState('');
     const [nickname, setNickname]= useState('');
+
+    useEffect(()=>{
+        console.log('랜더링이 완료됨');
+        console.log({name, nickname});
+
+        return() => {
+            console.log('cleanup');
+            console.log(name);
+        }
+    },[name]);
 
     const onChageName = e => {
         setName(e.target.value);

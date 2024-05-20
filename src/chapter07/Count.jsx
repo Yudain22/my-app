@@ -1,4 +1,4 @@
-import React, {useState, userState} from "react";
+import React, {useEffect, useState, userState} from "react";
 
 // function Counter(props){
 //     var count = 0;
@@ -21,6 +21,12 @@ function Counter(props){
     const [count, setCount] = useState(0);
     //setCount,count를 useState 훅을 걸어줌 
     //State는 환경에 따라변화하는 값, State 값이 바뀌면 재랜더링됨
+
+    //componentDidMount, componentDidUpdate와 비슷하게 작동
+    useEffect(()=>{
+        //브라우저 API를 사용해서 document의 title을 업데이트합니다.
+        document.title = `총 ${count}번 클릭했습니다.`;
+    });
 
     return ( //변수 각각에 대해 set 함수가 따로 존재
         <div>
