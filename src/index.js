@@ -14,6 +14,14 @@ import NotificationList from './chapter06/NotificationList';
 import Counter from './chapter07/Count';
 import Info from './chapter07/Info';
 import Average from './chapter07/Average';
+import BoilingVerdict from './chapter12/BoilingVerdict';
+import Calculater from './chapter12/Carculator';
+import WelcomeDialog from './chapter13.jsx/WelcomeDialog';
+import ProfileCard from './chapter13.jsx/ProfileCard';
+import Maintest from './chapter14/Maintest';
+import DarkOrLight from './chapter14/DarkOrLight';
+import Blocks from './chapter15/chapter15/Blocks';
+import MainPage from './chapter15/chapter15/MainPage';
 
 
 
@@ -30,8 +38,14 @@ root.render(
   {/* <BoardList/> */}
   {/* <NotificationList/> */}
   {/* <Counter/> */}
-  <Average/>
+  {/* <Average/> */}
     {/* <Info/> */}
+{/* <Calculater/> */}
+{/* <ProfileCard/> */}
+{/* <Maintest/> */}
+{/* <DarkOrLight/> */}
+<Blocks/>
+{/* <MainPage/> */}
   </React.StrictMode>
 );
 
